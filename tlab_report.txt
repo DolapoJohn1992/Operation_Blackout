@@ -1,0 +1,15 @@
+Address:   10.0.2.15             00001010.00000000.00000010.00 001111
+Netmask:   255.255.255.192 = 26  11111111.11111111.11111111.11 000000
+Wildcard:  0.0.0.63              00000000.00000000.00000000.00 111111
+=>
+Network:   10.0.2.0/26           00001010.00000000.00000010.00 000000
+HostMin:   10.0.2.1              00001010.00000000.00000010.00 000001
+HostMax:   10.0.2.62             00001010.00000000.00000010.00 111110
+PING secure.titancorp.com (13.248.169.48) 56(84) bytes of data.
+64 bytes from a904c694c05102f30.awsglobalaccelerator.com (13.248.169.48): icmp_seq=1 ttl=255 time=7.67 ms
+
+--- secure.titancorp.com ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+03:53:58.312464 IP 10.0.2.15.57538 > 13.248.169.48.80: Flags [S], seq 3848905388, win 64240, options [mss 1460,sackOK,TS val 1924532241 ecr 0,nop,wscale 9], length 0
+03:53:58.320427 IP 13.248.169.48.80 > 10.0.2.15.57538: Flags [S.], seq 437760001, ack 3848905389, win 65535, options [mss 1460], length 0
+03:53:58.320487 IP 10.0.2.15.57538 > 13.248.169.48.80: Flags [.], ack 1, win 64240, length 0
